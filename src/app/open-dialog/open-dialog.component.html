@@ -1,0 +1,24 @@
+<div class="dialog">
+  <h2 mat-dialog-title class="text">{{results.teamFullName}}</h2>
+  <mat-dialog-content>
+    <table>
+      <tr>
+        <th>Played</th>
+        <th>Win</th>
+        <th>Los</th>
+        <th>Draw</th>
+      </tr>
+      <tr>
+        <td>{{ results.totalPlayed}}</td>
+        <td>{{results.totalWin}}</td>
+        <td>{{results.totalLos}}</td>
+        <td>{{results.totalDraw}}</td>
+      </tr>
+    </table>
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-dialog-close class="mat-raised-button" (click)="close()">Close</button>
+  </mat-dialog-actions>
+</div>
